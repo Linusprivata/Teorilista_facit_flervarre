@@ -154,7 +154,18 @@ Detta skrivs $\lim_{x\to a} f(x)=A$ eller $f(x)\to A$ då $x \to a$.
 \DefItem{Riemannsumma för en funktion från $\mathbb{R}^2$ till $\mathbb{R}$}{sid 253, eller PowerPoint på föreläsning 13}
 \DefItem{Sambandet mellan kartesiska och polära koordinater samt areaelement}{sid 46, 199, eller föreläsning 2 \& 14}
 \DefItem{Sambandet mellan kartesiska och sfäriska/rymdpolära koordinater samt volymelement}{sid 52, 200, eller föreläsning 2 \& 16}
-\DefItem{Sambandet mellan kartesiska och cylindriska koordinater samt volymelement}{föreläsning 2 \& 16 (se även sid 49)}
+\subsubsection*{Sambandet mellan kartesiska och cylindriska koordinater samt volymelement}
+\Kalla{föreläsning 2 \& 16 (se även sid 49)}
+\begin{AnswerBox}{Ditt svar (definition + ev. exempel/kommentar)}
+\textbf{Cylindriska koordinater.} Sambandet ges av
+\[
+x=r\cos\theta,\qquad y=r\sin\theta,\qquad z=z.
+\]
+\textbf{Exempel.} Punkten $(-1,1,-1)$ har cylindriska koordinater
+\[
+\left(\sqrt{2},\frac{3\pi}{4},-1\right).
+\]
+\end{AnswerBox}\vspace{2mm}
 \DefItem{Medelvärde av en reellvärd funktion av två/tre variabler på ett område}{föreläsning 17}
 
 \subsection{Kurvor och kurvintegraler}
@@ -181,7 +192,21 @@ Detta skrivs $\lim_{x\to a} f(x)=A$ eller $f(x)\to A$ då $x \to a$.
 \DefItem{Normalytintegral/Flödesintegral (ytintegral av vektorfält)}{sid 332, eller föreläsning 23}
 \DefItem{Divergensen och rotationen av vektorfält}{sid 324, 322 (plan); sid 348, 336 (rum), eller föreläsning 24}
 \DefItem{Divergensfritt/Källfritt vektorfält}{sid 325, 354, eller föreläsning 24}
-\DefItem{Rotationsfritt/Virvelfritt vektorfält}{sid 323, 342, eller föreläsning 24}
+\subsubsection*{Rotationsfritt/Virvelfritt vektorfält}
+\Kalla{sid 323, 342, eller föreläsning 24}
+\begin{AnswerBox}{Ditt svar (definition + ev. exempel/kommentar)}
+\textbf{Exempel.} For $F=\left(\frac{1}{z},\frac{1}{z},\frac{1-x-y}{z^2}\right)$ far vi
+\[
+\operatorname{curl} F=
+\begin{vmatrix}
+\mathbf{e}_1 & \mathbf{e}_2 & \mathbf{e}_3 \\
+\partial/\partial x & \partial/\partial y & \partial/\partial z \\
+1/z & 1/z & (1-x-y)/z^2
+\end{vmatrix}
+=\left(-\frac{1}{z^2}+\frac{1}{z^2},-\frac{1}{z^2}+\frac{1}{z^2},0-0\right)=0.
+\]
+Sa $F$ ar virvelfritt och darfor ocksa konservativt for $z>0$. Alltsa finns en potential $\phi$ sa att $F=\nabla\phi$ for $z>0$.
+\end{AnswerBox}\vspace{2mm}
 
 % ============================================================
 \section{Formulera (utan bevis)}
